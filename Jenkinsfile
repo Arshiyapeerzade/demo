@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        jdk 'Java 16'
+        jdk 'jdk16'
     }
     stages {
         stage('Clone Repository') {
