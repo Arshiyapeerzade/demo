@@ -2,7 +2,7 @@ pipeline {
     agent none
     tools {
         jdk 'JDK 17'  // Ensure 'JDK 17' is correctly configured in Jenkins Global Tool Configuration
-        maven 'Maven'  // Ensure 'Maven' is correctly configured in Jenkins
+        maven 'Maven 3.8.1'  // Ensure 'Maven' is correctly configured in Jenkins
     }
     stages {
         stage('Declarative: Checkout SCM') {
