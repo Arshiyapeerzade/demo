@@ -41,7 +41,7 @@ pipeline {
     }
     post {
         always {
-            node { // Ensure cleanWs is run within a node context
+            node('master') { // Ensure cleanWs is run within a node context
                 cleanWs()
             }
         }
